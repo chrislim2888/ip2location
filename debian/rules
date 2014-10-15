@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+DPKG_EXPORT_BUILDFLAGS = 1
+
+override_dh_auto_build:
+	./autogen.sh
+	./configure
+	$(MAKE)
+
+override_dh_clean:
+	rm -rf depcomp ltmain.sh config.* Makefile.in aclocal.m4 configure install-h missing install-sh
+	rm -rf autom4te.*
+	dh_clean
+
+override_dh_auto_install:
+	$(MAKE) DESTDIR=$$(pwd)/debian/ip2location prefix=/usr install
+
+%:
+	dh $@

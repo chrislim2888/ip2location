@@ -1,0 +1,16 @@
+Source: ip2location
+Maintainer: ChrisLim <chrislim2888@yahoo.com>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.4
+Homepage: https://github.com/chrislim2888/ip2location
+Build-Depends: debhelper (>= 9)
+
+Package: ip2location
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Get IP address information from IP2Location BIN data file
+ It read the IP address, IPv4 or IPv6 address format, and get the information 
+ from IP2Location BIN data file for display. User may provide the IP address 
+ as standard input or file containing one ip per line. Several output format 
+ supported such as CSV, TAB and XML.
