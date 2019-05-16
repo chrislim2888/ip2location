@@ -1,6 +1,8 @@
-===========================
+# This library is deprecated and no longer supported. Please use https://github.com/chrislim2888/IP2Location-C-Library
+
+
 IP2Location 7.0.0
-===========================
+==================
 
 IP2Location is a tool allowing user to get IP address information such as country, region, city, 
 latitude, longitude, zip code, time zone, ISP, domain name, connection type, area code, weather, 
